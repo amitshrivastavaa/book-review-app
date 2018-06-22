@@ -1,0 +1,33 @@
+{
+  "src_folders" : ["tests/ui"],
+  "output_folder" : "reports",
+  "page_objects_path" : "",
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "",
+    "port" : 4448
+  },
+  "test_settings" : {
+    "default" : {
+      "launch_url" : "http://localhost:8080",
+      "selenium_port"  : 4448,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "skip_testcases_on_fail": false,
+      "screenshots" : {
+        "enabled" : true,
+        "path" : "./reports"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "chromeOptions" :{
+         "prefs": {
+           "intl.accept_languages": "en,en-US"
+         }
+       }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+version: '2'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./docker/app-service/Dockerfile
+    entrypoint:
+        - /usr/local/bin/docker-entrypoint.sh
+    depends_on:
+     - book_review_db
+    environment:
+     - DATABASE_HOST=book_review_db
+    ports:
+     - "3000:3000"
+  book_review_db:
+    build: ./docker/database-service
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456

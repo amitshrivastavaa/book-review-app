@@ -1,0 +1,17 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "rules": {
+    "arrow-parens": ["error", "always"],
+    "comma-dangle": 0,
+    "no-console": 0,
+    "max-len": 0,
+    "camelcase": 0,
+    "no-param-reassign": 0,
+    "dot-notation": 0,
+    "func-names": 0,
+    "no-underscore-dangle": 0,
+    "jsx-a11y/img-has-alt": 0,
+    "jsx-a11y/href-no-hash": 0,
+  }
+}

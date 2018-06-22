@@ -1,0 +1,11 @@
+.add-new-book {
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 2px 10px;
+  display: inline-block;
+  margin-top: 14px;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}

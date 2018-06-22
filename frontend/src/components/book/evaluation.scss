@@ -1,0 +1,35 @@
+body {
+  background-color: #e9ecef;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.existing-evaluations{
+  margin-top: 20px;
+}
+
+.new-evaluation {
+  .new-ratings {
+    margin-bottom: 10px;
+    .heading {
+      margin-right: 10px;
+    }
+  }
+}
+
+.evaluation, .new-evaluation {
+  border: 1px solid white;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.new-ratings, .evaluation {
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}

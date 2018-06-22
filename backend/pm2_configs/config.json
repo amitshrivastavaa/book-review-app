@@ -1,0 +1,14 @@
+{
+  "apps" : [{
+    "name"        : "web",
+    "script"      : "./server-production.js",
+    "exec_mode"   : "fork",
+    "exec_interpreter": "babel-node",
+    "instances" : 1,
+    "merge_logs" :true,
+    "env": {
+      "PORT": 3000,
+      "MONITORING": false
+    }
+  }]
+}
